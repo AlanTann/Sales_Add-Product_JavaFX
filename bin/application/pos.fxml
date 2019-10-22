@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="575.0" prefWidth="554.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.PosController">
+   <children>
+      <TableView fx:id="productTV" layoutX="72.0" layoutY="48.0" prefHeight="249.0" prefWidth="220.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="48.0">
+        <columns>
+          <TableColumn fx:id="productNameTC" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="productPriceTC" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="checkoutTV" layoutX="298.0" layoutY="48.0" prefHeight="249.0" prefWidth="255.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="48.0">
+        <columns>
+          <TableColumn fx:id="checkoutTCName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="checkoutTCPrice" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="111.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="58.0" prefWidth="83.0" text="Add" />
+      <Label fx:id="totalAmount" layoutX="375.0" layoutY="391.0" text="Label" />
+   </children>
+</AnchorPane>
